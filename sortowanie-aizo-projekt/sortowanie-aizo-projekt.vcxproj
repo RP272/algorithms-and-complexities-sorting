@@ -128,15 +128,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ActionDataBundler.cpp" />
+    <ClCompile Include="ActionTypePicker.cpp" />
     <ClCompile Include="DataTypePicker.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="FileReader.cpp" />
+    <ClCompile Include="SortingSetup.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ActionDataBundler.hpp" />
+    <ClInclude Include="ActionTypePicker.hpp" />
     <ClInclude Include="DataTypePicker.hpp" />
     <ClInclude Include="FileReader.hpp" />
     <ClInclude Include="FileReaderResult.hpp" />
     <ClInclude Include="DataParser.hpp" />
+    <ClInclude Include="SortingSetup.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="data.txt" />

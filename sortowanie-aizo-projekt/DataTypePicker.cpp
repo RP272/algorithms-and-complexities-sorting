@@ -8,7 +8,7 @@ DataType DataTypePicker::pick() {
 	int selection;
 	while(true)
 	{
-		std::cout << "Wybierz typ danych, z którym chcesz pracowaæ:" << std::endl;
+		std::cout << "Wybierz typ danych, z ktorym chcesz pracowac:" << std::endl;
 		std::cin >> selection;
 		switch (selection)
 		{
@@ -19,7 +19,7 @@ DataType DataTypePicker::pick() {
 		case 3:
 			return DT_CHAR;
 		default:
-			std::cout << "Niew³aœciwy wybór" << std::endl;
+			std::cout << "Niewlasciwy wybor" << std::endl;
 			break;
 		}
 	}
