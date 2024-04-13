@@ -4,9 +4,10 @@
 #include <fstream>
 #include "FileReaderResult.hpp"
 
-class FileReader {
-public:
-    static FileReaderResult read(const std::string& filename);
+class FileReader 
+{
+    public:
+        static FileReaderResult read(const std::string& filename);
 };
 
 #endif

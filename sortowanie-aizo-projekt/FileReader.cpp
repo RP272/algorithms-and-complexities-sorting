@@ -5,7 +5,8 @@
 #include <string>
 #include <sstream>
 
-FileReaderResult FileReader::read(const std::string& filename) {
+FileReaderResult FileReader::read(const std::string& filename) 
+{
     std::string* filelines = nullptr;
     int number_of_elements = 0;
     std::ifstream input_file(filename);

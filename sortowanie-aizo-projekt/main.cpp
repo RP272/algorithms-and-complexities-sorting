@@ -1,12 +1,14 @@
-#include <iostream>
+#include <iostream>,
 #include "FileReader.hpp"
 #include "FileReaderResult.hpp"
 #include "DataParser.hpp"
+#include "DataTypePicker.hpp"
 
 int main()
 {
-    std::cout << "Hello World" << std::endl;
-    std::string filename;
+    DataType datatype = DataTypePicker::pick();
+    
+    /*std::string filename;
     std::cin >> filename;
     FileReaderResult result = FileReader::read(filename);
     std::cout << "After reading" << std::endl;
@@ -22,5 +24,5 @@ int main()
     }
     std::cout << "Press enter to continue";
     std::cin.ignore();
-    std::cin.get();
+    std::cin.get();*/
 }

@@ -128,10 +128,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DataTypePicker.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="FileReader.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DataTypePicker.hpp" />
     <ClInclude Include="FileReader.hpp" />
     <ClInclude Include="FileReaderResult.hpp" />
     <ClInclude Include="DataParser.hpp" />

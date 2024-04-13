@@ -3,7 +3,8 @@
 
 #include <string>
 
-struct FileReaderResult {
+struct FileReaderResult 
+{
 	int number_of_elements;
 	std::string* filelines;
 };
