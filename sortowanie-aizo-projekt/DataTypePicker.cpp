@@ -2,13 +2,13 @@
 #include "DataTypePicker.hpp"
 
 DataType DataTypePicker::pick() {
-	std::cout << "1 -> Integer" << std::endl;
-	std::cout << "2 -> Float" << std::endl;
-	std::cout << "3 -> Char" << std::endl;
+	std::cout << "1. Integer" << std::endl;
+	std::cout << "2. Float" << std::endl;
+	std::cout << "3. Char" << std::endl;
 	int selection;
 	while(true)
 	{
-		std::cout << "Wybierz typ danych, z ktorym chcesz pracowac:" << std::endl;
+		std::cout << "Wybierz typ danych, z ktorym chcesz pracowac: ";
 		std::cin >> selection;
 		switch (selection)
 		{
