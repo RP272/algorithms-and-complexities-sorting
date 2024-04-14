@@ -1,6 +1,7 @@
 #ifndef SORTINGSETUP_H
 #define SORTINGSETUP_H
 #include "InsertionSort.hpp"
+#include "HeapSort.hpp"
 
 template<typename T>
 class SortingSetup
@@ -21,32 +22,42 @@ class SortingSetup
 			std::cout << "3. Sortowanie Shella" << std::endl;
 			std::cout << "4. Sortowanie szybkie" << std::endl;
 			std::cout << "5. Zakoncz dzialanie programu" << std::endl;
-			std::cout << "Wybierz algorytm sortowania lub zakoncz dzialanie programu: ";
 			int decision; 
-			std::cin >> decision;
-			switch (decision) {
-				case 1: {
-					InsertionSort<T>* insertion_sort = new InsertionSort<T>(this->data_to_sort, this->number_of_elements);
-					std::cout << "Przed sortowaniem: ";
-					insertion_sort->print_table();
-					insertion_sort->sort();
-					std::cout << "Po sortowaniu: ";
-					insertion_sort->print_table();
-					break;
-				}
-				case 2: {
-					break;
-				}
-				case 3: {
-					break;
-				}
-				case 4: {
-					break;
-				}
-				case 5: {
-
+			while (true) 
+			{
+				std::cout << "Wybierz algorytm sortowania lub zakoncz dzialanie programu: ";
+				std::cin >> decision;
+				switch (decision) {
+					case 1: {
+						InsertionSort<T>* insertion_sort = new InsertionSort<T>(this->data_to_sort, this->number_of_elements);
+						std::cout << "Przed sortowaniem: ";
+						insertion_sort->print_table();
+						insertion_sort->sort();
+						std::cout << "Po sortowaniu: ";
+						insertion_sort->print_table();
+						break;
+					}
+					case 2: {
+						HeapSort<T>* heap_sort = new HeapSort<T>(this->data_to_sort, this->number_of_elements);
+						std::cout << "Przed stworzeniem kopca: ";
+						heap_sort->print_table();
+						heap_sort->sort();
+						std::cout << "Po stworzeniu kopca: ";
+						heap_sort->print_table();
+						break;
+					}
+					case 3: {
+						break;
+					}
+					case 4: {
+						break;
+					}
+					case 5: {
+						return;
+					}
 				}
 			}
+			
 		}
 };
 

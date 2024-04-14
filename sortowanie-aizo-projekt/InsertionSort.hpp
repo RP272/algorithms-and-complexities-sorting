@@ -16,15 +16,9 @@ class InsertionSort : public SortingAlgorithm<T>
 				if (this->data_to_sort[i] > this->data_to_sort[i + 1]) {
 					this->swap(this->data_to_sort, i, i + 1);
 					j = i;
-					while (j > 0) {
-						if (this->data_to_sort[j] < this->data_to_sort[j - 1]) {
+					while (j > 0 && this->data_to_sort[j] < this->data_to_sort[j-1]) {
 							this->swap(this->data_to_sort, j, j - 1);
 							j--;
-						}
-						else {
-							break;
-						}
-						
 					}
 				}
 				i++;
