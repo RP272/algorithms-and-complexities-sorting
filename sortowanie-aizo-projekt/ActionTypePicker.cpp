@@ -4,20 +4,12 @@
 ActionType ActionTypePicker::pick() {
 	std::cout << "1. Wczytaj dane z pliku" << std::endl;
 	std::cout << "2. Wygeneruj dane" << std::endl;
+	std::cout << "Wybierz opcje: ";
 	int selection;
-	while (true)
-	{
-		std::cout << "Wybierz akcje, ktora chcesz przeprowadzic: ";
-		std::cin >> selection;
-		switch (selection)
-		{
-		case 1:
-			return AT_READ;
-		case 2:
-			return AT_GENERATE;
-		default:
-			std::cout << "Niewlasciwy wybor" << std::endl;
-			break;
-		}
+	while (!(std::cin >> selection) || selection < 1 || selection > 2) {
+		std::cin.clear();
+		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		std::cout << "Niewlasciwy wybor. Wprowadz ponownie: ";
 	}
+	return ActionType(selection);
 }

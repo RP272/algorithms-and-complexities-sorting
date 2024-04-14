@@ -133,6 +133,7 @@
     <ClCompile Include="DataTypePicker.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="FileReader.cpp" />
+    <ClCompile Include="PivotPicker.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ActionDataBundler.hpp" />
@@ -143,6 +144,13 @@
     <ClInclude Include="DataParser.hpp" />
     <ClInclude Include="HeapSort.hpp" />
     <ClInclude Include="InsertionSort.hpp" />
+    <ClInclude Include="PivotPicker.hpp" />
+    <ClInclude Include="QuickSort.hpp" />
+    <ClInclude Include="QuickSortLeftPivot.hpp" />
+    <ClInclude Include="QuickSortMiddlePivot.hpp" />
+    <ClInclude Include="QuickSortRandomPivot.hpp" />
+    <ClInclude Include="QuickSortRightPivot.hpp" />
+    <ClInclude Include="RandomNumberGenerator.hpp" />
     <ClInclude Include="SortingAlgorithm.hpp" />
     <ClInclude Include="SortingSetup.hpp" />
   </ItemGroup>
