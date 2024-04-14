@@ -86,6 +86,9 @@
     <ClInclude Include="QuickSortRandomPivot.hpp">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
+    <ClInclude Include="QuickSortConstructor.hpp">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="data.txt">

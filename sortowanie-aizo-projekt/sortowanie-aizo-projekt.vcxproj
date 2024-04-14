@@ -146,6 +146,7 @@
     <ClInclude Include="InsertionSort.hpp" />
     <ClInclude Include="PivotPicker.hpp" />
     <ClInclude Include="QuickSort.hpp" />
+    <ClInclude Include="QuickSortConstructor.hpp" />
     <ClInclude Include="QuickSortLeftPivot.hpp" />
     <ClInclude Include="QuickSortMiddlePivot.hpp" />
     <ClInclude Include="QuickSortRandomPivot.hpp" />
