@@ -4,7 +4,8 @@
 #include "HeapSort.hpp"
 #include "PivotPicker.hpp"
 #include "QuickSortConstructor.hpp"
-
+#include "SequencePicker.hpp"
+#include "ShellSortConstructor.hpp"
 
 template<typename T>
 class SortingSetup
@@ -20,16 +21,19 @@ class SortingSetup
 		}
 
 		void show_menu() {
-			std::cout << "1. Sortowanie przez wstawianie" << std::endl;
-			std::cout << "2. Sortowanie przez kopcowanie" << std::endl;
-			std::cout << "3. Sortowanie Shella" << std::endl;
-			std::cout << "4. Sortowanie szybkie" << std::endl;
-			std::cout << "5. Zakoncz dzialanie programu" << std::endl;
 			int decision; 
 			Pivot pivot;
+			Sequence sequence;
 			SortingAlgorithm<T>* algorithm = nullptr;
 			while (true) 
 			{
+				std::cout << "#######################################################" << std::endl;
+				std::cout << "1. Sortowanie przez wstawianie" << std::endl;
+				std::cout << "2. Sortowanie przez kopcowanie" << std::endl;
+				std::cout << "3. Sortowanie Shella" << std::endl;
+				std::cout << "4. Sortowanie szybkie" << std::endl;
+				std::cout << "5. Zakoncz dzialanie programu" << std::endl;
+				std::cout << "#######################################################" << std::endl;
 				std::cout << "Wybierz algorytm sortowania lub zakoncz dzialanie programu: ";
 				std::cin >> decision;
 				switch (decision) {
@@ -42,6 +46,8 @@ class SortingSetup
 						break;
 					}
 					case 3: {
+						sequence = SequencePicker::pick();
+						algorithm = ShellSortConstructor<T>::CreateInstance(this->data_to_sort, this->number_of_elements, sequence);
 						break;
 					}
 					case 4: {

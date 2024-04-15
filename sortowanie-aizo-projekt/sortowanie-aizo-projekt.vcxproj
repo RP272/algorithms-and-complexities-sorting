@@ -134,6 +134,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="FileReader.cpp" />
     <ClCompile Include="PivotPicker.cpp" />
+    <ClCompile Include="SequencePicker.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ActionDataBundler.hpp" />
@@ -152,6 +153,11 @@
     <ClInclude Include="QuickSortRandomPivot.hpp" />
     <ClInclude Include="QuickSortRightPivot.hpp" />
     <ClInclude Include="RandomNumberGenerator.hpp" />
+    <ClInclude Include="SequencePicker.hpp" />
+    <ClInclude Include="ShellSort.hpp" />
+    <ClInclude Include="ShellSortConstructor.hpp" />
+    <ClInclude Include="ShellSortKnuthSequence.hpp" />
+    <ClInclude Include="ShellSortSedgewickSequence.hpp" />
     <ClInclude Include="SortingAlgorithm.hpp" />
     <ClInclude Include="SortingSetup.hpp" />
   </ItemGroup>

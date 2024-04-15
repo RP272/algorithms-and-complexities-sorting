@@ -30,6 +30,22 @@ class SortingAlgorithm
 			}
 			std::cout << std::endl;
 		}
+
+		void array_sorted() {
+			bool sorted = true;
+			for (int i = 1; i < this->number_of_elements; i++) {
+				if (this->data_to_sort[i] < this->data_to_sort[i - 1]) {
+					sorted = false;
+					break;
+				}
+			}
+			if (sorted == true) {
+				std::cout << "Dane posortowane poprawnie" << std::endl;
+			}
+			else {
+				std::cout << "Dane nie zostaly posortowane ppoprawnie" << std::endl;
+			}
+		}
 };
 
 #endif

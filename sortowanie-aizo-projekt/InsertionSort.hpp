@@ -10,17 +10,14 @@ class InsertionSort : public SortingAlgorithm<T>
 
 		void sort() override
 		{
-			int i = 0;
+			int i = 1;
 			int j;
-			while (i < this->number_of_elements-1) {
-				if (this->data_to_sort[i] > this->data_to_sort[i + 1]) {
-					this->swap(this->data_to_sort, i, i + 1);
+			while (i < this->number_of_elements) {
 					j = i;
 					while (j > 0 && this->data_to_sort[j] < this->data_to_sort[j-1]) {
 							this->swap(this->data_to_sort, j, j - 1);
 							j--;
 					}
-				}
 				i++;
 			}
 		}
