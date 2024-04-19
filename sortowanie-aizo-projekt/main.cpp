@@ -2,6 +2,7 @@
 #include "DataTypePicker.hpp"
 #include "ActionTypePicker.hpp"
 #include "ActionDataBundler.hpp"
+#include "RandomFloatGenerator.hpp"
 
 int main()
 {

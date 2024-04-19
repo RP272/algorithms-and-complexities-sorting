@@ -1,15 +1,16 @@
-#ifndef RANDOMNUMBERGENERATOR_H
-#define RANDOMNUMBERGENERATOR_H
+#ifndef RANDOMINTEGERGENERATOR_H
+#define RANDOMINTEGERGENERATOR_H
 #include <random>
 
-class RandomNumberGenerator
+class RandomIntegerGenerator
 {
     public:
-        RandomNumberGenerator(int min, int max) : distribution(min, max) {}
+        RandomIntegerGenerator(int min, int max) : distribution(min, max) {}
 
         int generate() {
             return distribution(generator);
         }
+
     private:
         std::mt19937 generator{ std::random_device{}() };
         std::uniform_int_distribution<int> distribution;

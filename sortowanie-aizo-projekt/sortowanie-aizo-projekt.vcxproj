@@ -130,6 +130,7 @@
   <ItemGroup>
     <ClCompile Include="ActionDataBundler.cpp" />
     <ClCompile Include="ActionTypePicker.cpp" />
+    <ClCompile Include="DataGenerator.cpp" />
     <ClCompile Include="DataTypePicker.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="FileReader.cpp" />
@@ -139,6 +140,7 @@
   <ItemGroup>
     <ClInclude Include="ActionDataBundler.hpp" />
     <ClInclude Include="ActionTypePicker.hpp" />
+    <ClInclude Include="DataGenerator.hpp" />
     <ClInclude Include="DataTypePicker.hpp" />
     <ClInclude Include="FileReader.hpp" />
     <ClInclude Include="FileReaderResult.hpp" />
@@ -152,7 +154,8 @@
     <ClInclude Include="QuickSortMiddlePivot.hpp" />
     <ClInclude Include="QuickSortRandomPivot.hpp" />
     <ClInclude Include="QuickSortRightPivot.hpp" />
-    <ClInclude Include="RandomNumberGenerator.hpp" />
+    <ClInclude Include="RandomFloatGenerator.hpp" />
+    <ClInclude Include="RandomIntegerGenerator.hpp" />
     <ClInclude Include="SequencePicker.hpp" />
     <ClInclude Include="ShellSort.hpp" />
     <ClInclude Include="ShellSortConstructor.hpp" />
@@ -160,9 +163,6 @@
     <ClInclude Include="ShellSortSedgewickSequence.hpp" />
     <ClInclude Include="SortingAlgorithm.hpp" />
     <ClInclude Include="SortingSetup.hpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="data.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

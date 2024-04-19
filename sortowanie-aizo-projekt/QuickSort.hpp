@@ -2,7 +2,6 @@
 #define QUICKSORT_H
 #include "SortingAlgorithm.hpp"
 #include "PivotPicker.hpp"
-#include "RandomNumberGenerator.hpp"
 
 template <typename T>
 class QuickSort : public SortingAlgorithm<T>

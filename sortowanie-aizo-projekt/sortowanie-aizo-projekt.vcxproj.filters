@@ -36,6 +36,9 @@
     <ClCompile Include="SequencePicker.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
+    <ClCompile Include="DataGenerator.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FileReaderResult.hpp">
@@ -74,7 +77,7 @@
     <ClInclude Include="PivotPicker.hpp">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
-    <ClInclude Include="RandomNumberGenerator.hpp">
+    <ClInclude Include="RandomIntegerGenerator.hpp">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
     <ClInclude Include="QuickSortLeftPivot.hpp">
@@ -107,10 +110,11 @@
     <ClInclude Include="ShellSortConstructor.hpp">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="data.txt">
-      <Filter>Pliki źródłowe</Filter>
-    </Text>
+    <ClInclude Include="DataGenerator.hpp">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomFloatGenerator.hpp">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
