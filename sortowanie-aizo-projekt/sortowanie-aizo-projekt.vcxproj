@@ -145,6 +145,7 @@
     <ClInclude Include="FileReader.hpp" />
     <ClInclude Include="FileReaderResult.hpp" />
     <ClInclude Include="DataParser.hpp" />
+    <ClInclude Include="GeneratedDataPartialSorter.hpp" />
     <ClInclude Include="HeapSort.hpp" />
     <ClInclude Include="InsertionSort.hpp" />
     <ClInclude Include="PivotPicker.hpp" />
@@ -163,6 +164,9 @@
     <ClInclude Include="ShellSortSedgewickSequence.hpp" />
     <ClInclude Include="SortingAlgorithm.hpp" />
     <ClInclude Include="SortingSetup.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="data.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

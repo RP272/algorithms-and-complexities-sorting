@@ -60,12 +60,15 @@ public:
 				return;
 			}
 			}
+			//algorithm->print_table();
 			auto t1 = std::chrono::high_resolution_clock::now();
 			algorithm->sort();
 			auto t2 = std::chrono::high_resolution_clock::now();
+			//algorithm->print_table();
 			auto ms_int = std::chrono::duration_cast<std::chrono::milliseconds>(t2 - t1);
-			std::cout << ms_int.count() << "ms" << std::endl;
 			algorithm->array_sorted();
+			std::cout << ms_int.count() << "ms" << std::endl;
+			delete algorithm;
 		}
 	}
 };

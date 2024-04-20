@@ -4,15 +4,18 @@
 template <typename T>
 class SortingAlgorithm
 {
-	protected:
+	public:
 		int number_of_elements;
 		T* data_to_sort;
-	
-	public:
+
 		SortingAlgorithm(T* data_to_sort, int number_of_elements) {
 			this->data_to_sort = new T[number_of_elements];
 			std::memcpy(this->data_to_sort, data_to_sort, sizeof(T) * number_of_elements);
 			this->number_of_elements = number_of_elements;
+		}
+
+		~SortingAlgorithm() {
+			delete this->data_to_sort;
 		}
 
 		virtual void sort() = 0;
@@ -45,6 +48,20 @@ class SortingAlgorithm
 			else {
 				std::cout << "Dane nie zostaly posortowane ppoprawnie" << std::endl;
 			}
+		}
+
+		void sort_first_n_elements(int n) {
+			for (int i = 0; i < n; i++) {
+				for (int j = this->number_of_elements - 1; j > i; j--) {
+					if (this->data_to_sort[j] < this->data_to_sort[j - 1]) {
+						this->swap(this->data_to_sort, j, j - 1);
+					}
+				}
+			}
+		}
+
+		T* get_data_to_sort() {
+			return this->data_to_sort;
 		}
 };
 
