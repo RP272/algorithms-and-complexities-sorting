@@ -4,16 +4,17 @@
 
 class RandomIntegerGenerator
 {
+    private:
+        std::random_device rd;
+        std::mt19937 rng;
+        std::uniform_int_distribution<int> uni;
     public:
-        RandomIntegerGenerator(int min, int max) : distribution(min, max) {}
-
-        int generate() {
-            return distribution(generator);
+       RandomIntegerGenerator(int min, int max) : rng(rd()), uni(min, max) {
         }
 
-    private:
-        std::mt19937 generator{ std::random_device{}() };
-        std::uniform_int_distribution<int> distribution;
+        int generate() {
+            return uni(rng);
+        }
 };
 
 #endif

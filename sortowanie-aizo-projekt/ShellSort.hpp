@@ -6,6 +6,9 @@
 template <typename T>
 class ShellSort : public SortingAlgorithm<T>
 {
+	/*
+	This is a base class for classes which implement different distance sequences for Shell sort.
+	*/
 	protected:
 		std::vector<int> distance_sequence;
 
@@ -14,6 +17,9 @@ class ShellSort : public SortingAlgorithm<T>
 
 		void sort() override
 		{
+			/*
+			Perform Shell sort based on distance sequence selected by the user.
+			*/
 			int h, i, j;
 			for(int x = this->distance_sequence.size() - 1; x >= 0; x--)
 			{

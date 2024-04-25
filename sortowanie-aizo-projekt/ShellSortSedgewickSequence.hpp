@@ -9,6 +9,9 @@ class ShellSortSedgewickSequence : public ShellSort<T>
 public:
 	ShellSortSedgewickSequence(T* data_to_sort, int number_of_elements) : ShellSort<T>(data_to_sort, number_of_elements)
 	{
+		/*
+			Generate distance sequence for input array based on Sedgewick implementation.
+		*/
 		this->distance_sequence.push_back(1);
 		int k = 1;
 		int coefficient;

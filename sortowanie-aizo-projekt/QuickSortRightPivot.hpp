@@ -9,6 +9,9 @@ class QuickSortRightPivot : public QuickSort<T>
 		QuickSortRightPivot(T* data_to_sort, int number_of_elements) : QuickSort<T>(data_to_sort, number_of_elements) {};
 
 		int partition(int left, int right) override {
+			/*
+			Pick the last element as pivot.
+			*/
 			T pivot = this->data_to_sort[right];
 			int l = left;
 			int r = right;

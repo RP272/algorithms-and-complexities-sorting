@@ -2,6 +2,9 @@
 #include "DataTypePicker.hpp"
 
 DataType DataTypePicker::pick() {
+	/*
+	* Pick which datatype you want to work with.
+	*/
 	std::cout << "1. Integer" << std::endl;
 	std::cout << "2. Float" << std::endl;
 	std::cout << "3. Char" << std::endl;

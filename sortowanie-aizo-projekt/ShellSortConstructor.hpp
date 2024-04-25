@@ -6,6 +6,9 @@
 
 template <typename T>
 class ShellSortConstructor {
+	/*
+	This is a static class which returns Shell sort objects based on the sequence picked by the user.
+	*/
 public:
 	static ShellSort<T>* CreateInstance(T* data_to_sort, int number_of_elements, Sequence s)
 	{

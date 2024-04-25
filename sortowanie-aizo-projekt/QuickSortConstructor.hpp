@@ -8,6 +8,9 @@
 
 template <typename T>
 class QuickSortConstructor {
+	/*
+	This is a static class which returns quicksort objects based on the pivot picked by the user.
+	*/
 	public:
 		static QuickSort<T>* CreateInstance(T* data_to_sort, int number_of_elements, Pivot p)
 		{
